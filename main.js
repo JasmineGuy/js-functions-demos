@@ -58,13 +58,29 @@
 //undefined because message variable is out of scope. You couls use closures to prevent the necessary variables from going out of scope
 
 // ex:
-let greeting =(function(){
-    let message = 'Hello'
-    let getMessage = function(){
-        return message;
-    };
-    return {
-        getMessage: getMessage,
-    };
-})();
-console.log(greeting.getMessage());
+// let greeting =(function(){
+//     let message = 'Hello'
+//     let getMessage = function(){
+//         return message;
+//     };
+//     return {
+//         getMessage: getMessage,
+//     };
+// })();
+// console.log(greeting.getMessage());
+
+// Arrow Functions
+
+// function sum(num1, num2){
+//     return num1 + num2
+// }
+
+// let output =sum(10, 5)
+// console.log(output)
+
+
+// Written as an arrow function
+
+let sum = (num1, num2) => num1 + num2
+let output =sum(10, 7)
+console.log(output)
